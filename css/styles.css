@@ -379,13 +379,15 @@ img {
   background-color: #2e2f42;
 }
 
+
 .footer-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
+
 .footer-logo-wrapper {
-  margin-right: 120px;
+  margin-right: 100px;
 }
 
 .footer-logo {
@@ -404,10 +406,10 @@ img {
   color: #f4f4fd;
 }
 
+
 .footer-title {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
@@ -417,15 +419,10 @@ img {
   gap: 16px;
 }
 
-
 .footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: #31d0aa !important;
-}
-
-
-.footer-subscribe-form button:hover,
-.footer-subscribe-form button:focus {
+.footer-social-link:focus,
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
   background-color: #31d0aa;
 }
 
@@ -433,10 +430,11 @@ img {
   margin-left: auto;
 }
 
+
 .footer-subscribe-form {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
 }
 
 .footer-subscribe-input {
@@ -459,9 +457,8 @@ img {
   color: #fff;
 }
 
-
 .footer-subscribe-input:focus {
-  border-color: #4d5ae5;
+  border-color: #31d0aa;
 }
 
 .footer-subscribe-btn {
@@ -481,8 +478,8 @@ img {
 
 /*#region Modal*/
 
-#backdrop {
-  position: fixed;
+.backdrop {
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -495,7 +492,7 @@ img {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#backdrop.is-open {
+.backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -509,21 +506,22 @@ img {
   transform: translate(-50%, -50%);
   width: 408px;
   min-height: 584px;
-  padding: 72px 24px 24px;
+  padding: 48px 24px 24px;
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #ffffff;
+  background-color: #fcfcfc;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#backdrop:not(.is-open) .modal {
+.backdrop:not(.is-open) .modal {
   transform: translate(-50%, -100%);
 }
 
+
 .modal-close-btn {
   position: absolute;
-  top: 24px;
+  top: 16px;
   right: 24px;
   display: flex;
   align-items: center;
@@ -553,13 +551,13 @@ img {
   fill: #ffffff;
 }
 
-/* ПОМИЛКА: Заголовок модалки не по центру */
+
 .modal-title {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: left;
+  text-align: center;
   color: #2e2f42;
 }
 
@@ -567,9 +565,10 @@ img {
   margin-bottom: 8px;
 }
 
+
 .modal-label {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -633,8 +632,9 @@ img {
   color: rgba(46, 47, 66, 0.4);
 }
 
+
 .modal-privacy-field {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .modal-privacy-label {
@@ -645,6 +645,10 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+}
+
+.modal-checkbox {
+  display: none;
 }
 
 .custom-checkbox {
