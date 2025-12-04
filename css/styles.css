@@ -247,7 +247,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-deskmin.jpg);
+    url(../images/hero-desk-min.jpg);
   background-color: #2e2f42;
   background-size: cover;
   background-repeat: no-repeat;
@@ -407,6 +407,7 @@ img {
 .footer-title {
   margin-bottom: 16px;
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
@@ -416,10 +417,15 @@ img {
   gap: 16px;
 }
 
+
 .footer-social-link:hover,
-.footer-social-link:focus,
-.footer-subscribe-btn:hover,
-.footer-subscribe-btn:focus {
+.footer-social-link:focus {
+  background-color: #31d0aa !important;
+}
+
+
+.footer-subscribe-form button:hover,
+.footer-subscribe-form button:focus {
   background-color: #31d0aa;
 }
 
@@ -446,15 +452,16 @@ img {
   color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe-input::placeholder {
   color: #fff;
 }
 
+
 .footer-subscribe-input:focus {
-  border-color: #31d0aa;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: #4d5ae5;
 }
 
 .footer-subscribe-btn {
@@ -467,16 +474,14 @@ img {
   padding: 0 24px;
 }
 
-
 .footer-subscribe-icon {
-  width: 20px;
-  height: 20px;
   fill: #fff;
 }
 /*#endregion Footer*/
 
 /*#region Modal*/
-.backdrop {
+
+#backdrop {
   position: fixed;
   left: 0;
   top: 0;
@@ -490,11 +495,12 @@ img {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-open {
+#backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
+
 
 .modal {
   position: absolute;
@@ -507,11 +513,11 @@ img {
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fcfcfc;
+  background-color: #ffffff;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop:not(.is-open) .modal {
+#backdrop:not(.is-open) .modal {
   transform: translate(-50%, -100%);
 }
 
@@ -547,12 +553,13 @@ img {
   fill: #ffffff;
 }
 
+/* ПОМИЛКА: Заголовок модалки не по центру */
 .modal-title {
   margin-bottom: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: left;
   color: #2e2f42;
 }
 
@@ -560,11 +567,10 @@ img {
   margin-bottom: 8px;
 }
 
-
 .modal-label {
   display: block;
   margin-bottom: 4px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
@@ -590,14 +596,11 @@ img {
   border-color: #4d5ae5;
 }
 
-
 .modal-icon {
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  width: 16px;
-  height: 20px;
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -644,7 +647,6 @@ img {
   color: #8e8f99;
 }
 
-
 .custom-checkbox {
   display: flex;
   align-items: center;
@@ -659,21 +661,15 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-icon {
-  width: 12px;
-  height: 10px;
-}
-
 .modal-privacy-link {
   line-height: 1.33;
   text-decoration: underline;
   color: #4d5ae5;
 }
 
-
 .modal-checkbox:checked + .modal-privacy-label .custom-checkbox {
   border: none;
-  background-color: #4d5ae5;
+  background-color: #404bbf;
   fill: #f4f4fd;
 }
 
