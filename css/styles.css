@@ -619,7 +619,7 @@ img {
   border-radius: 4px;
 
   background-color: transparent;
-
+  outline: transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -655,16 +655,13 @@ img {
   border-radius: 4px;
 
   background-color: transparent;
-  
+  outline: transparent;
   resize: none;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
 
@@ -683,12 +680,12 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-right: 8px;
 
   width: 16px;
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  fill: transparent;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -707,16 +704,11 @@ img {
   fill: #f4f4fd;
 }
 
-.custom-checkbox-icon {
-  fill: transparent;
-}
-
-.modal-checkbox:checked + .custom-checkbox > .custom-checkbox-icon {
-  fill: #f4f4fd;
-}
-
 .modal-checkbox:focus-visible + .modal-privacy-label .custom-checkbox {
   outline: 1px solid #404bbf;
 }
 
+.modal-submit-btn {
+  margin: 0 auto;
+}
 /*#endregion Modal*/
