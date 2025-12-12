@@ -595,11 +595,9 @@ img {
   color: #2e2f42;
 }
 
-.modal-field {
-  margin-bottom: 8px;
-}
-
 .modal-label {
+  display: block;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -642,10 +640,6 @@ img {
   fill: #4d5ae5;
 }
 
-.modal-field-comment {
-  margin-bottom: 16px;
-}
-
 .modal-comment {
   width: 100%;
   height: 120px;
@@ -666,10 +660,6 @@ img {
 
 .modal-comment::placeholder {
   color: rgba(46, 47, 66, 0.4);
-}
-
-.modal-privacy-field {
-  margin-bottom: 24px;
 }
 
 .modal-privacy-label {
