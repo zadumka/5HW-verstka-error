@@ -6,6 +6,7 @@ body {
 }
 
 /*#region Reset*/
+
 ul,
 ol {
   padding: 0;
@@ -38,9 +39,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 /*#endregion Reset*/
 
 /*#region Common*/
+
 .section {
   padding: 120px 0;
 }
@@ -63,11 +66,11 @@ img {
 
 .main-btn {
   display: block;
-  padding: 0 32px;
+  padding: 16px 32px;
   min-width: 169px;
-  height: 56px;
   border: none;
   border-radius: 4px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -76,6 +79,7 @@ img {
   color: #fff;
   background-color: #4d5ae5;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -86,6 +90,7 @@ img {
 
 .section-title {
   margin-bottom: 72px;
+
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -96,6 +101,7 @@ img {
 
 .card-subtitle {
   margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -118,7 +124,6 @@ img {
   width: 40px;
   height: 40px;
 }
-
 .social-link {
   display: flex;
   align-items: center;
@@ -126,6 +131,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -138,9 +144,11 @@ img {
 .social-icon {
   fill: #f4f4fd;
 }
+
 /*#endregion Common*/
 
 /*#region Utils*/
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -153,9 +161,11 @@ img {
   clip-path: inset(100%);
   margin: -1px;
 }
+
 /*#endregion Utils*/
 
 /*#region Header*/
+
 .page-header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
@@ -190,6 +200,7 @@ img {
 .nav-link {
   display: block;
   padding: 24px 0;
+
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -224,8 +235,10 @@ img {
 .contacts-link {
   display: block;
   padding: 24px 0;
+
   line-height: 1.5;
   letter-spacing: 0.02em;
+
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -236,13 +249,16 @@ img {
 .contacts-link:focus {
   color: #404bbf;
 }
+
 /*#endregion Header*/
 
 /*#region Hero*/
+
 .section-hero {
   max-width: 1440px;
   margin: 0 auto;
   padding: 188px 0;
+
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -257,6 +273,7 @@ img {
 .hero-title {
   max-width: 496px;
   margin: 0 auto 48px;
+
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -267,9 +284,11 @@ img {
 .hero-btn {
   margin: 0 auto;
 }
+
 /*#endregion Hero*/
 
 /*#region Benefits*/
+
 .benefits-list {
   display: flex;
   gap: 24px;
@@ -293,6 +312,7 @@ img {
 /*#endregion Benefits*/
 
 /*#region Team*/
+
 .section-team {
   background-color: #f4f4fd;
 }
@@ -323,9 +343,11 @@ img {
 .team-social-list {
   justify-content: center;
 }
+
 /*#endregion Team*/
 
 /*#region Portfolio*/
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -355,9 +377,11 @@ img {
   height: 100%;
   padding: 40px 32px;
   background-color: #4d5ae5;
+
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -371,23 +395,23 @@ img {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
+
 /*#endregion Portfolio*/
 
 /*#region Footer*/
+
 .page-footer {
   padding: 100px 0;
   background-color: #2e2f42;
 }
 
-
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
-
 .footer-logo-wrapper {
-  margin-right: 100px;
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -401,14 +425,15 @@ img {
 
 .footer-text {
   max-width: 264px;
+
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
 
-
 .footer-title {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -430,11 +455,10 @@ img {
   margin-left: auto;
 }
 
-
 .footer-subscribe-form {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 24px;
 }
 
 .footer-subscribe-input {
@@ -444,12 +468,15 @@ img {
   border: 1px solid #ffffff;
   border-radius: 4px;
   background-color: transparent;
+
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   outline: transparent;
+
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -474,20 +501,24 @@ img {
 .footer-subscribe-icon {
   fill: #fff;
 }
+
 /*#endregion Footer*/
 
 /*#region Modal*/
 
 .backdrop {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
+
   background-color: rgba(46, 47, 66, 0.4);
+
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -498,7 +529,6 @@ img {
   pointer-events: auto;
 }
 
-
 .modal {
   position: absolute;
   top: 50%;
@@ -506,11 +536,13 @@ img {
   transform: translate(-50%, -50%);
   width: 408px;
   min-height: 584px;
-  padding: 48px 24px 24px;
+  padding: 72px 24px 24px;
   border-radius: 4px;
+
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
+
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -518,11 +550,11 @@ img {
   transform: translate(-50%, -100%);
 }
 
-
 .modal-close-btn {
   position: absolute;
-  top: 16px;
+  top: 24px;
   right: 24px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -530,6 +562,7 @@ img {
   height: 24px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
   background-color: #e7e9fc;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -551,9 +584,9 @@ img {
   fill: #ffffff;
 }
 
-
 .modal-title {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -565,10 +598,9 @@ img {
   margin-bottom: 8px;
 }
 
-
 .modal-label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -585,8 +617,10 @@ img {
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+
   background-color: transparent;
-  outline: transparent;
+
+
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -600,6 +634,7 @@ img {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -618,48 +653,43 @@ img {
   padding: 8px 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+
   background-color: transparent;
-  outline: transparent;
+  
   resize: none;
+
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
 
-
 .modal-privacy-field {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .modal-privacy-label {
-  display: flex;
-  align-items: center;
-  gap: 8px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
 
-.modal-checkbox {
-  display: none;
-}
-
 .custom-checkbox {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-right: 8px;
+
   width: 16px;
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  fill: transparent;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -671,9 +701,17 @@ img {
   color: #4d5ae5;
 }
 
-.modal-checkbox:checked + .modal-privacy-label .custom-checkbox {
+.modal-checkbox:checked + .custom-checkbox {
   border: none;
   background-color: #404bbf;
+  fill: #f4f4fd;
+}
+
+.custom-checkbox-icon {
+  fill: transparent;
+}
+
+.modal-checkbox:checked + .custom-checkbox > .custom-checkbox-icon {
   fill: #f4f4fd;
 }
 
@@ -681,7 +719,4 @@ img {
   outline: 1px solid #404bbf;
 }
 
-.modal-submit-btn {
-  margin: 0 auto;
-}
 /*#endregion Modal*/
